@@ -1,0 +1,40 @@
+{
+  "name": "@erechnungswandler/leitweg-id",
+  "version": "1.0.0",
+  "description": "Leitweg-ID prüfen und Prüfziffer berechnen (Format-Spezifikation 2.0.2, KoSIT). Validate German Leitweg-IDs for XRechnung e-invoices.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test test/leitweg.test.js"
+  },
+  "keywords": [
+    "leitweg-id",
+    "xrechnung",
+    "e-rechnung",
+    "zugferd",
+    "einvoice",
+    "germany",
+    "validation"
+  ],
+  "homepage": "https://erechnungswandler.de/leitweg-id",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/belahamburg-sudo/leitweg-id.git"
+  },
+  "author": "Bela Goldmann (https://erechnungswandler.de)",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}
